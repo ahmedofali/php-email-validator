@@ -34,4 +34,9 @@ class InMemoryLog implements Log
     {
         return $this->log;
     }
+
+    public function reset()
+    {
+        $this->log = array();
+    }
 }
