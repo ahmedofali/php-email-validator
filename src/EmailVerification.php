@@ -33,6 +33,12 @@ class EmailVerification
 
         $log = sprintf( 'Initialized with Email: %s, Verifier Email: %s, Port: %s', $this->email , $this->verifier_email, $this->port );
         $this->logger->addToLog( $log );
+
+        if( $this->isYahoo() ){
+            $this->logger->addToLog( 'Figured Out that it\'s a yahoo provider and started verification' );
+
+
+        }
     }
 
     /**
@@ -42,5 +48,25 @@ class EmailVerification
     public function getLog()
     {
         return $this->logger->getLog();
+    }
+
+    /**
+     * Check if provider is yahoo or other provider
+     * @return bool
+     */
+    protected function isYahoo()
+    {
+        return $this->getDomain( $this->email ) == 'yahoo.com';
+    }
+
+    /**
+     * Return Email Provider
+     * @param $email
+     * @return mixed
+     */
+    protected function getDomain( $email )
+    {
+        $domain = explode( '@', $email );
+        return $domain[1];
     }
 }
