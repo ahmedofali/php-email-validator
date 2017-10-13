@@ -1,0 +1,23 @@
+{
+    "name": "ahmedofali/php-email-validator",
+    "description": "PHP Library to Verify if email address exists on the mail server",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Ahmed Ali",
+            "email": "dev.ahmed.abbas@gmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "PHPVerifyEmail\\": "src"
+      }
+    },
+    "require": {
+      "php": ">=5.4.0"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "~4.8"
+    }
+}
