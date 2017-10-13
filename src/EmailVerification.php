@@ -1,15 +1,15 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ahmed ali
- * Date: 10/13/2017
- * Time: 8:55 PM
- */
 
 namespace PHPVerifyEmail;
 
+use PHPVerifyEmail\LogInterface ;
 
 class EmailVerification
 {
+    protected $logger;
 
+    public function __construct( LogInterface $logger, $email, $verifier_email, $port )
+    {
+        $this->logger = $logger;
+    }
 }
