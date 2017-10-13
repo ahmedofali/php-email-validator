@@ -3,6 +3,7 @@
 namespace PHPVerifyEmail;
 
 use PHPVerifyEmail\LogInterface ;
+use PHPVerifyEmail\VerificationMethods\Yahoo ;
 
 class EmailVerification
 {
@@ -38,17 +39,29 @@ class EmailVerification
         if( $this->isYahoo() ){
             $this->logger->addToLog( 'Figured Out that it\'s a yahoo provider and started verification' );
 
-            $this->setResult( new YahooVerification( $this->logger, $this->email ) );
+            $yahoo = new Yahoo( $this->logger, $this->email );
+            $this->setResult( $yahoo->verify() );
         }
 
         return $this ;
     }
 
-    public function setResult( $result ){
+    /**
+     * set Result of Validation
+     * @param $result
+     */
+    protected function setResult( $result )
+    {
         $this->result = $result ;
     }
 
-    public function getResult(){
+
+    /**
+     * Get Result of validation
+     * @return mixed
+     */
+    public function getResult()
+    {
         return $this->result ;
     }
 
