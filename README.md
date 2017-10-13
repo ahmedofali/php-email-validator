@@ -6,13 +6,19 @@ hbattat/verifyEmail.
 How to Use it:
 ================
 ```PHP
-$result = PHPVerifyEmail::verify( 'dev.ahmed.abbas@gmail.com' );   
+$email = 'dev.ahmed.abbas@gmail.com';
+$verify_email = 'ali338888@gmail.com';
+$port = 25;
+$verification = EmailVerifier::verify( $email, $verify_email, $port );
   
 // print log   
 
-print_r( $result->getLog() ) ;
+print_r( $verification->getLog() ) ;  
+
+@return  Array of log messages
   
 // get Result
-$result->getResult();
+$verification->getResult();
+@return boolean
 
 ```
