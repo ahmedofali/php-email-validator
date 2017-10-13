@@ -10,6 +10,7 @@ class EmailVerification
     protected $email ;
     protected $verifier_email ;
     protected $port ;
+    protected $result ;
 
     public function newState( LogInterface $logger, $email, $verifier_email, $port )
     {
@@ -37,9 +38,20 @@ class EmailVerification
         if( $this->isYahoo() ){
             $this->logger->addToLog( 'Figured Out that it\'s a yahoo provider and started verification' );
 
-
+            $this->setResult( new YahooVerification( $this->logger, $this->email ) );
         }
+
+        return $this ;
     }
+
+    public function setResult( $result ){
+        $this->result = $result ;
+    }
+
+    public function getResult(){
+        return $this->result ;
+    }
+
 
     /**
      * Get Log Messages

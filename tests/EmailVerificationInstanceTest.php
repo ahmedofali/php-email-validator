@@ -28,7 +28,7 @@ class EmailVerificationInstance extends AbstractVerifyTest
 
     public function testIfYahooLogWillIncerement()
     {
-        $email = 'checkifyahoo@yahoo.com';
+        $email = 'emineme32@yahoo.com';
         $verify_email = 'dev.ahmed.abbas@gmail.com';
         $port = 26;
         $instance = EmailVerifier::verify( $email, $verify_email, $port );
