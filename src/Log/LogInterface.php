@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPVerifyEmail;
+namespace PHPVerifyEmail\Log;
 
 
 interface LogInterface

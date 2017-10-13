@@ -1,6 +1,6 @@
 <?php namespace PHPVerifyEmail\VerificationMethods;
 
-use PHPVerifyEmail\LogInterface;
+use PHPVerifyEmail\Log\LogInterface;
 
 class MxRecord implements namespace\VerificationMethodInterface
 {

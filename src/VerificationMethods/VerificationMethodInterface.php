@@ -2,5 +2,5 @@
 
 interface VerificationMethodInterface
 {
-
+    public function verify();
 }

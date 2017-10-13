@@ -1,6 +1,6 @@
 <?php namespace PHPVerifyEmail\VerificationMethods ;
 
-use PHPVerifyEmail\LogInterface;
+use PHPVerifyEmail\Log\LogInterface;
 use PHPVerifyEmail\VerificationMethods\VerificationMethodInterface;
 
 class Yahoo implements VerificationMethodInterface

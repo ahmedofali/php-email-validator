@@ -2,7 +2,7 @@
 
 namespace PHPVerifyEmail;
 
-use PHPVerifyEmail\LogInterface ;
+use PHPVerifyEmail\Log\LogInterface ;
 use PHPVerifyEmail\VerificationMethods\Yahoo ;
 use PHPVerifyEmail\VerificationMethods\MxRecord ;
 

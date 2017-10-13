@@ -1,6 +1,6 @@
 <?php namespace PHPVerifyEmail;
 
-use PHPVerifyEmail\InMemoryLog ;
+use PHPVerifyEmail\Log\InMemoryLog ;
 use PHPVerifyEmail\EmailVerification ;
 use \InvalidArgumentException ;
 

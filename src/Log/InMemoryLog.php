@@ -1,8 +1,8 @@
 <?php
 
-namespace PHPVerifyEmail;
+namespace PHPVerifyEmail\Log;
 
-use PHPVerifyEmail\LogInterface as Log ;
+use PHPVerifyEmail\Log\LogInterface as Log ;
 
 class InMemoryLog implements Log
 {
