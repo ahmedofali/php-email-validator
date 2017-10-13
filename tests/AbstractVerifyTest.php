@@ -11,7 +11,7 @@ abstract class AbstractVerifyTest extends \PHPUnit_Framework_TestCase
     {
         $email = 'dev.ahmed.abbas-gmail.com';
         $verify_email = 'dev.ahmed.abbas@gmail.com';
-        $port = 26;
+        $port = 25;
 
         EmailVerifier::verify( $email, $verify_email, $port );
     }
@@ -23,7 +23,7 @@ abstract class AbstractVerifyTest extends \PHPUnit_Framework_TestCase
     {
         $email = 'dev.ahmed.abbas@gmail.com';
         $verify_email = 'dev.ahmed.abbas-gmail.com';
-        $port = 26;
+        $port = 25;
 
         EmailVerifier::verify( $email, $verify_email, $port );
     }

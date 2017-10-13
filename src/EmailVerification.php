@@ -4,6 +4,7 @@ namespace PHPVerifyEmail;
 
 use PHPVerifyEmail\LogInterface ;
 use PHPVerifyEmail\VerificationMethods\Yahoo ;
+use PHPVerifyEmail\VerificationMethods\MxRecord ;
 
 class EmailVerification
 {
@@ -41,6 +42,11 @@ class EmailVerification
 
             $yahoo = new Yahoo( $this->logger, $this->email );
             $this->setResult( $yahoo->verify() );
+        }else{
+            $this->logger->addToLog( 'Figured Out MX Record' );
+
+            $mx_record = new MxRecord( $this->logger, $this->email, $this->verifier_email, $this->port );
+            $this->setResult( $mx_record->verify() );
         }
 
         return $this ;
