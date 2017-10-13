@@ -1,8 +1,8 @@
-<?php
+<?php namespace PHPVerifyEmail\Tests ;
 
 use PHPVerifyEmail\PHPVerifyEmail as EmailVerifier;
 
-class AbstractVerifyTest extends \PHPUnit_Framework_TestCase
+abstract class AbstractVerifyTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @expectedException InvalidArgumentException
