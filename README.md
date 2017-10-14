@@ -29,7 +29,7 @@ print_r( $verification->getResult() );
 
 Test Cases:
 ============
-From Terminal use write: 
+From Terminal write: 
 ```
 vendor\bin\phpunit
 ```
