@@ -4,6 +4,12 @@ use PHPVerifyEmail\Log\InMemoryLog ;
 use PHPVerifyEmail\EmailVerification ;
 use \InvalidArgumentException ;
 
+/*
+ * (c) Ahmed Ali <dev.ahmed.abbas@gmail.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
 final class PHPVerifyEmail
 {
     /**
