@@ -26,3 +26,10 @@ print_r( $verification->getLog() );
 ---------------------
 print_r( $verification->getResult() );
 ```
+
+Test Cases:
+============
+From Terminal use write: 
+```
+vendor\bin\phpunit
+```
