@@ -1,5 +1,7 @@
-PHP Verify Email
+PHP Verify Email 
 ================
+[![Build Status](https://travis-ci.org/ahmedofali/php-email-validator.svg?branch=master)](https://travis-ci.org/ahmedofali/php-email-validator)
+
 Is a php library for validating Emails and make sure the email is valid This library Inspired from 
 hbattat/verifyEmail.
 
@@ -37,5 +39,5 @@ Test Cases:
 ============
 From Terminal write: 
 ```
-vendor\bin\phpunit
+composer test
 ```
