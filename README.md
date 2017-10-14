@@ -1,6 +1,7 @@
 PHP Verify Email 
 ================
 [![Build Status](https://travis-ci.org/ahmedofali/php-email-validator.svg?branch=master)](https://travis-ci.org/ahmedofali/php-email-validator) [![Coverage Status](https://coveralls.io/repos/github/ahmedofali/php-email-validator/badge.svg)](https://coveralls.io/github/ahmedofali/php-email-validator)
+
 Is a php library for validating Emails and make sure the email is valid This library Inspired from 
 hbattat/verifyEmail.
 
