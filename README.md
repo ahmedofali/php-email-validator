@@ -13,8 +13,7 @@ $verification = EmailVerifier::verify( $email, $verify_email, $port );
   
 // print log   
 
-print_r( $verification->getLog() ) ;  
-
+print_r( $verification->getLog() );
 @return  Array of log messages
   
 // get Result
