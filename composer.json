@@ -3,6 +3,7 @@
     "description": "PHP Library to Verify if email address exists on the mail server",
     "license": "MIT",
     "type": "library",
+    "version": "0.1.1",
     "keywords": [ "free", "email", "validation", "service", "phpValidateEmail", "ahmedofali"],
     "authors": [
         {
