@@ -20,7 +20,7 @@ require "vendor/autoload.php";
 use PHPVerifyEmail\PHPVerifyEmail;  
 
 $email = 'dev.ahmed.abbass@gmail.com';
-$verify_email = 'ali338888@gmail.com';
+$verify_email = 'mohamedattya@gmail.com';
 $port = 25;
 $verification = PHPVerifyEmail::verify( $email, $verify_email, $port );  
 
